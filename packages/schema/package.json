@@ -1,0 +1,22 @@
+{
+  "name": "@repo/schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "keywords": [
+    "zod-schema",
+    "types",
+    "schema"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.3"
+  }
+}

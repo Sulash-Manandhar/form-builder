@@ -23,6 +23,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@repo/schema':
+        specifier: workspace:*
+        version: link:../../packages/schema
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -99,6 +102,16 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
+
+  packages/schema:
+    dependencies:
+      zod:
+        specifier: ^3.22.4
+        version: 3.22.4
+    devDependencies:
+      typescript:
+        specifier: ^5.4.3
+        version: 5.4.3
 
   packages/typescript-config: {}
 
@@ -4126,6 +4139,12 @@ packages:
     engines: {node: '>=14.17'}
     dev: true
 
+  /typescript@5.4.3:
+    resolution: {integrity: sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
+
   /unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
     dependencies:
@@ -4273,3 +4292,7 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+    dev: false
